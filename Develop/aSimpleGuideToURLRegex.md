@@ -30,29 +30,70 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+Anchors match the starting and ending points of thr string.
+
 `^`     is used at the beginning of the string to position anchor.      
 `$`     is used at the end of the string to position anchor.
 
 ### Quantifiers
 
+Quantifiers specify how many of a character or character class should be matched.
+
+`+`  matches one or more occurences of the preceding character.
+`*`  matches zero or more occurences of the preceding character.
+`?`  matches zero or one occurence of thr preceding character.
+
+URL EXAMPLE: `(https?:\/\/)?`
+
 ### OR Operator
+
+`[]` matches anything included in brackets.
+
+URL EXAMPLE: `[\da-z\.-]`
 
 ### Character Classes
 
+Character classes allow you to describe specfic sets of characters that can be used in a search pattern.
+
+`\w`  looks for any alphanumeric character.
+`\d`  looks for any digit.
+
+URL EXAMPLE: `[\/\w \.-]`
+
 ### Flags
+
+Flags allow you to change how the regex behaves. (making it case sensetive, allowing matches on multiple lines.)
 
 ### Grouping and Capturing
 
+`()`  is used to organize and create seperate groups. within each of the groups there is a regex that can be evaluated seperately.
+
+URL EXAMPLE: `([\/\w \.-]*)`
+
 ### Bracket Expressions
+
+`[]`  matches any character within brackets to form a string.
 
 ### Greedy and Lazy Match
 
+`+`  Greedy allows as many matches as possible.
+
+URL EXAMPLE: `([\da-z\.-]+)`
+
 ### Boundaries
+
+`\b`  asserts the engines current position in the string.
 
 ### Back-references
 
+Back-references are used to match the same text as previously matched by a capturing group.
+
 ### Look-ahead and Look-behind
+
+zero-length assertions?
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Kal Parker
+[text](https://github.com/kalleepar)
+
