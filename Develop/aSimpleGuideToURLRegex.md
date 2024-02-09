@@ -30,6 +30,11 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+```
+  ^ is used at the beginning of the string to position anchor.      
+  $ is used at the end of the string to position anchor.
+```
+
 ### Quantifiers
 
 ### OR Operator
